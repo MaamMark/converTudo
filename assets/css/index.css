@@ -1,0 +1,4 @@
+/* Fazer as setas ao lado do input do número sumírem */
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

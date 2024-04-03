@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <!--Estilo da página-->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!--Biblioteca para calcular mais precisamente as conversões-->
+    <script src="https://cdn.jsdelivr.net/npm/big.js@5.2.2"></script>
+</head>
+
+<body>
+    <div>
+        <!--Caixa de seleção para as categorias-->
+        <select name="category" id="category">
+            <option value="length">Comprimento</option>
+            <option value="data">Dados</option>
+            <option value="temperature">Temperatura</option>
+            <option value="time">Tempo</option>
+            <option value="speed">Velocidade</option>
+            <option value="mass">Massa</option>
+            <option value="area">Área</option>
+            <option value="volume">Volume</option>
+        </select>
+
+        <!--Caixa de seleção para unidade de medida que deseja converter-->
+        <select name="fromUnit" id="fromUnit"></select>
+
+        <!--Caixa de seleção para unidade de medida convertida-->
+        <select name="toUnit" id="toUnit"></select>
+
+        <!--Onde o número de unidades será(ão) colocado(s)-->
+        <input type ="text" id="inputValue" value="1" onkeypress="return filterKeys(event)">
+    </div>
+
+    <!--Onde o resultado será apresentado-->
+    <div>
+        <p id="result"></p>
+    </div>
+
+    <!--Script que faz a conversão dos dados e a atualização das caixas de seleção-->
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
